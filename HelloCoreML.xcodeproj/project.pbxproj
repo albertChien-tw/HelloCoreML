@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		425C8B5D2010722D000F8A72 /* RecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C8B5C2010722D000F8A72 /* RecognitionView.swift */; };
+		425C8B6120109642000F8A72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C8B6020109642000F8A72 /* ViewController.swift */; };
 		42C16641200D025500D4F8EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C16640200D025500D4F8EF /* AppDelegate.swift */; };
-		42C16643200D025500D4F8EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C16642200D025500D4F8EF /* ViewController.swift */; };
 		42C16646200D025500D4F8EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C16644200D025500D4F8EF /* Main.storyboard */; };
 		42C16648200D025500D4F8EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C16647200D025500D4F8EF /* Assets.xcassets */; };
 		42C1664B200D025500D4F8EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C16649200D025500D4F8EF /* LaunchScreen.storyboard */; };
 		42C16656200D025500D4F8EF /* HelloCoreMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C16655200D025500D4F8EF /* HelloCoreMLTests.swift */; };
 		42C16661200D025500D4F8EF /* HelloCoreMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C16660200D025500D4F8EF /* HelloCoreMLUITests.swift */; };
+		42C16677200D0C7700D4F8EF /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 42C16676200D0C7700D4F8EF /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		425C8B5C2010722D000F8A72 /* RecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionView.swift; sourceTree = "<group>"; };
+		425C8B6020109642000F8A72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42C1663D200D025500D4F8EF /* HelloCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C16640200D025500D4F8EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42C16642200D025500D4F8EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42C16645200D025500D4F8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42C16647200D025500D4F8EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42C1664A200D025500D4F8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		42C1665C200D025500D4F8EF /* HelloCoreMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloCoreMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C16660200D025500D4F8EF /* HelloCoreMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoreMLUITests.swift; sourceTree = "<group>"; };
 		42C16662200D025500D4F8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C16676200D0C7700D4F8EF /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,8 @@
 		42C1663F200D025500D4F8EF /* HelloCoreML */ = {
 			isa = PBXGroup;
 			children = (
+				42C1666E200D026600D4F8EF /* Class */,
 				42C16640200D025500D4F8EF /* AppDelegate.swift */,
-				42C16642200D025500D4F8EF /* ViewController.swift */,
 				42C16644200D025500D4F8EF /* Main.storyboard */,
 				42C16647200D025500D4F8EF /* Assets.xcassets */,
 				42C16649200D025500D4F8EF /* LaunchScreen.storyboard */,
@@ -123,6 +127,40 @@
 				42C16662200D025500D4F8EF /* Info.plist */,
 			);
 			path = HelloCoreMLUITests;
+			sourceTree = "<group>";
+		};
+		42C1666E200D026600D4F8EF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				42C16671200D028700D4F8EF /* Controllers */,
+				42C16670200D028000D4F8EF /* Models */,
+				42C1666F200D027700D4F8EF /* VIews */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		42C1666F200D027700D4F8EF /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				425C8B5C2010722D000F8A72 /* RecognitionView.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		42C16670200D028000D4F8EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42C16676200D0C7700D4F8EF /* Inceptionv3.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42C16671200D028700D4F8EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				425C8B6020109642000F8A72 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +232,11 @@
 					42C1663C200D025500D4F8EF = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
 					};
 					42C16650200D025500D4F8EF = {
 						CreatedOnToolsVersion = 9.2;
@@ -259,7 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C16643200D025500D4F8EF /* ViewController.swift in Sources */,
+				425C8B6120109642000F8A72 /* ViewController.swift in Sources */,
+				425C8B5D2010722D000F8A72 /* RecognitionView.swift in Sources */,
+				42C16677200D0C7700D4F8EF /* Inceptionv3.mlmodel in Sources */,
 				42C16641200D025500D4F8EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8FBP4YLUA;
 				INFOPLIST_FILE = HelloCoreML/Info.plist;
@@ -441,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8FBP4YLUA;
 				INFOPLIST_FILE = HelloCoreML/Info.plist;
